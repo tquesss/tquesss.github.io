@@ -32,21 +32,38 @@
     }
   };
 
-  // Lenis Smooth Scroll Kurulumu
+const copyBtn = document.getElementById('copy-email-btn');
+
+if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+        const email = "buluthanpamuk@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+            // Buton üzerindeki yazıyı geçici olarak değiştir
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+            
+            setTimeout(() => {
+                copyBtn.innerHTML = originalText;
+            }, 2000);
+        });
+    });
+}
+
 const lenis = new Lenis({
   duration: 1.8, 
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // 
   smoothWheel: true, //
 });
-
-function copyEmail(email) {
-    navigator.clipboard.writeText(email);
-    const toast = document.getElementById('toast');
-    toast.classList.add('show');
-    setTimeout(() => {
-        toast.classList.remove('show');
-    }, 2500);
+function updateTime() {
+    const options = { timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    const timeString = new Date().toLocaleTimeString('en-US', options);
+    const timeEl = document.getElementById('local-time');
+    if (timeEl) timeEl.innerText = timeString;
 }
+
+setInterval(updateTime, 1000);
+updateTime();
+
 
 const DISCORD_ID = "832561555945685023";
 
@@ -220,6 +237,13 @@ document.querySelector('#projects').scrollIntoView({
     style.textContent = css;
     document.head.appendChild(style);
   };
+
+  // F12 Konsol Easter Egg
+console.log(
+    "%c Hey! Code inspector? %c Check out my repos at github.com/tquesss ",
+    "background: #6366f1; color: #fff; padding: 5px 10px; border-radius: 4px; font-weight: bold;",
+    "color: #a855f7; font-weight: bold;"
+);
 
   const initScrollReveal = () => {
     const targets = [];
