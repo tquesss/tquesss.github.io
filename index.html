@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tquess</title>
+    <title>Portfolio | Tquess</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <div id="toast" class="toast">Copied to clipboard!</div>
 </head>
-<div id="toast" class="toast">Copied to clipboard! 🚀</div>
 <body>
 
     <header>
@@ -117,8 +117,9 @@
             <h2>Get In Touch</h2>
             <p>Feel free to connect or reach out for collaborations!</p>
             <div class="social-links">
-                <button class="copy-email-btn" onclick="copyEmail('buluthanpamuk@gmail.com')">
-    <i class="fa-solid fa-copy"></i> Copy Email Address
+            <button id="copy-email-btn" class="btn">
+    <i class="fa-regular fa-copy"></i> Copy Email Address
+</button>
 </button>
                 <a href="https://github.com/tquesss" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="mailto:buluthanpamuk@gmail.com"><i class="fa-solid fa-envelope"></i></a>
@@ -127,7 +128,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026</p>
+        <p>&copy; 2026  Local time: <span id="local-time">--:--</span> Istanbul (UTC+3)</p>
     </footer>
 
     <script src="script.js"></script>
