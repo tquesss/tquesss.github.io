@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Tquess</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="toast" class="toast">Copied to clipboard! 🚀</div>
+<body>
+
+    <header>
+        <nav>
+            
+            <a href="#hero" class="logo">TQUESS</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero">
+            
+            <div class="hero-content">
+                <div class="status-badge">
+                    
+    <span class="pulse-dot"></span>
+    <span>Available for new projects</span>
+</div>
+
+                <h1>Hi, I'm <span class="highlight" id="scramble-text">TQUESS</span></h1>
+                <p>IT Student & Junior Software Developer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="https://github.com/tquesss" target="_blank" class="btn secondary-btn">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="discord-card">
+    <div id="discord-status-dot" class="status-offline"></div>
+    <div class="discord-info">
+        <span id="discord-user">Loading Discord status...</span>
+        <span id="spotify-activity">Not playing anything</span>
+    </div>
+            </div>
+        </section>
+
+       
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm an IT student focused on building software tools, backend scripts, web applications, Py scripts and some different tools.
+                 I enjoy learning new technologies and practicing clean code concepts.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Tools</h2>
+            <div class="skills-list">
+                <div class="skill-item"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="skill-item"><i class="fa-solid fa-code"></i> C# / .NET</div>
+                <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</div>
+                <div class="skill-item"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+                <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+            </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+
+<article class="project-card">
+    <div class="project-info">
+        <h3>Currency Converter</h3>
+        <p>
+            A Python CLI application built to practice working with REST APIs, parsing JSON data, and handling user inputs. Fetches live exchange rates (USD, EUR, GBP) and converts them to TRY in real-time.
+        </p>
+        
+        <div class="tech-tags">
+            <span>Python 3.x</span>
+            <span>REST API</span>
+            <span>JSON Parsing</span>
+            <span>CLI</span>
+        </div>
+
+        <div class="project-links">
+            <a href="https://github.com/tquesss/currency-converter" target="_blank">
+                <i class="fa-brands fa-github"></i> View Repository
+            </a>
+        </div>
+    </div>
+</article>
+
+                <article class="project-card">
+                    <div class="project-info">
+                        <h3>Next Project</h3>
+                        <p>Coming soon...</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Feel free to connect or reach out for collaborations!</p>
+            <div class="social-links">
+                <button class="copy-email-btn" onclick="copyEmail('buluthanpamuk@gmail.com')">
+    <i class="fa-solid fa-copy"></i> Copy Email Address
+</button>
+                <a href="https://github.com/tquesss" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:buluthanpamuk@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
